@@ -1,4 +1,4 @@
-baseURL = 'https://mkroo.github.io/'
+baseURL = 'https://mkroo.com/'
 languageCode = 'ko-KR'
 title = 'mkroo tech blog'
 theme = 'stack'
