@@ -1,0 +1,36 @@
+baseURL = 'https://mkroo.github.io/'
+languageCode = 'ko-KR'
+title = 'mkroo tech blog'
+theme = 'PaperMod'
+paginate = 10
+
+[params]
+  env = "production"
+  description = "개발과 기술에 대한 이야기"
+  author = "mkroo"
+  showReadingTime = true
+  showShareButtons = true
+  showPostNavLinks = true
+  showBreadCrumbs = true
+  showCodeCopyButtons = true
+  showToc = true
+  tocOpen = false
+
+  [params.homeInfoParams]
+    Title = "Hi, I'm mkroo"
+    Content = "개발과 기술에 대한 이야기를 공유합니다"
+
+  [[params.socialIcons]]
+    name = "github"
+    url = "https://github.com/mkroo"
+
+[markup]
+  [markup.highlight]
+    style = "monokai"
+    lineNos = true
+
+[outputs]
+  home = ["HTML", "RSS", "JSON"]
+
+[minify]
+  disableXML = true
