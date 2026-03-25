@@ -1,36 +1,46 @@
 baseURL = 'https://mkroo.github.io/'
 languageCode = 'ko-KR'
 title = 'mkroo tech blog'
-theme = 'PaperMod'
+theme = 'stack'
 paginate = 10
 
 [params]
-  env = "production"
   description = "개발과 기술에 대한 이야기"
-  author = "mkroo"
-  showReadingTime = true
-  showShareButtons = true
-  showPostNavLinks = true
-  showBreadCrumbs = true
-  showCodeCopyButtons = true
-  showToc = true
-  tocOpen = false
+  mainSections = ["posts"]
 
-  [params.homeInfoParams]
-    Title = "Hi, I'm mkroo"
-    Content = "개발과 기술에 대한 이야기를 공유합니다"
+  [params.sidebar]
+    compact = false
+    subtitle = "개발과 기술에 대한 이야기를 공유합니다"
 
-  [[params.socialIcons]]
-    name = "github"
-    url = "https://github.com/mkroo"
+  [params.article]
+    math = false
+    toc = true
+    readingTime = true
+
+  [params.comments]
+    enabled = false
+
+  [params.colorScheme]
+    toggle = true
+    default = "auto"
+
+  [params.widgets]
+    homepage = []
+    page = []
+
+[[params.sidebar.social]]
+  identifier = "github"
+  name = "GitHub"
+  url = "https://github.com/mkroo"
+  weight = 1
 
 [markup]
   [markup.highlight]
-    style = "monokai"
     lineNos = true
+    style = "dracula"
 
 [outputs]
-  home = ["HTML", "RSS", "JSON"]
+  home = ["HTML", "RSS"]
 
 [minify]
   disableXML = true
